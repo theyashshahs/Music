@@ -16,4 +16,4 @@ def details(request,album_id):
     except Album.DoesNotExist : 
         raise Http404("Album does not exist")
 
-    return render(request, 'music/details.html', {'album':album})  #another way of ding the dictionery work
+    return render(request, 'music/details.html', {'album':album})  #another way of doing the dictionary work
