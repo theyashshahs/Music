@@ -9,11 +9,6 @@ def index(request):
     return render(request, 'music/index.html', context)
 
 def details(request,album_id):
-    #try:
-    #    album = Album.objects.get(pk = album_id)
-    
-    #except Album.DoesNotExist : 
-    #    raise Http404("Album does not exist")
 
     album = get_object_or_404(Album, pk = album_id)  #replaces entire try and catch
 
@@ -30,5 +25,5 @@ def favourite(request, album_id):
             })
     else:
         selected_song.is_favourite = True
-        selected_song.sava()
-        return render(request, 'music/details.html', {'album':album})
+        selected_song.save()
+        return render(request, 'music/details.html', {'album':album}) # adds songs to favourite list
