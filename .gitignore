@@ -1,5 +1,0 @@
-# To ignore the venv packages 
-venv/
-
-# To ignore the .idea files
-.idea
