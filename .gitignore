@@ -1,0 +1,4 @@
+# TO ignore the venv packages 
+venv/
+
+.idea
