@@ -4,3 +4,6 @@ venv/
 
 # To ignore the .idea files
 .idea/
+
+# Toignore .vscode files
+.vscode/
