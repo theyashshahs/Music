@@ -1,0 +1,9 @@
+# To ignore the venv packages 
+venv/
+.venv
+
+# To ignore the .idea files
+.idea/
+
+# Toignore .vscode files
+.vscode/
