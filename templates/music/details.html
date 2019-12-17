@@ -11,8 +11,6 @@
     {% endfor %}
 </ul> --> {% endcomment %}
 
-
-
 {% if error_message %}
     <p><strong>{{ error_message }}</strong></p>
 
@@ -25,7 +23,7 @@
         <label for="song{{ forloop.counter }}">
             {{ song.song_title }}
             {% if song.is_favourite %}
-                <img src="{% static "images/favourite.png" %}" >
+                <img src="{% static 'images/favourite.png' %}">
             {% endif %}
         </label><br>
     {% endfor %}
